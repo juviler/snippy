@@ -1,0 +1,95 @@
+/* style.css */
+
+body {
+	font-family: 'Avenir';
+	color: #FFFFFF;
+	background-color: #33475B;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Avenir Next';
+	font-size: 40px;
+	margin-bottom: 6px;
+}
+
+h2 {
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+#type-container {   
+    margin: 0px auto;
+    width: 100%;
+}
+
+button {
+	color: #FFFFFF;
+	background-color: #FD795A;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+    outline: none;
+	padding: 10px;
+	width: 455px;
+}
+
+button:hover {
+	opacity: .9;
+	cursor: pointer;
+}
+
+input {
+	margin: 0 6px 0px 0;
+	vertical-align: middle;
+}
+
+input:after, input:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #E8E8E8;
+    content: '';
+    display: inline-block;
+    border: 2px solid #FFFFFF;
+}
+
+input:checked:after { background-color: #FD795A; }
+
+input:hover { cursor: pointer; }
+
+#paragraph-button, #ordered-list-button {
+	width: 224px;
+	margin-left: 1.5px;
+	margin-right: 1.5px;
+	margin-bottom: 6px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+textarea {
+	resize: none;
+	width: 450px;
+	outline: none ! important;
+	border-radius: 5px;
+	font-family: 'Avenir Next';
+}
+
+#input-header, #input-content { border-radius: 0px 0px 0px 0px; }
+
+#generate-button {
+	border-radius: 0px 0px 5px 5px;
+	margin-bottom: 20px;
+}
+
+#output { border-radius: 5px 5px 0px 0px; }
+
+#copy-button {
+	border-radius: 0px 0px 5px 5px;
+	margin-bottom: 6px;
+}
+
+#copy-confirm { display: none; }
+

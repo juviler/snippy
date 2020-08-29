@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" /> 
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<h1>Snippy</h1>
+	<h2>featured snippet code generator for the HubSpot Blog</h2>
+	<div id="type-container">
+	    <button id="paragraph-button" onclick="setToParagraph()">
+	    	<input type="radio" id="radio-paragraph" checked>paragraph
+	  	</button>
+	    <button id="ordered-list-button" onclick="setToOrderedList()">
+	    	<input type="radio" id="radio-ordered-list">ordered list
+		</button>
+	</div>
+	<textarea id="input-header" rows="1" placeholder="header"></textarea><br>
+	<textarea id="input-content" rows="8" placeholder="content"></textarea><br>
+	<button id="generate-button" onclick="generateSnippet()">generate code</button><br>
+	<textarea id="output" rows="8" placeholder="code" readonly onclick="this.select()"></textarea><br>
+	<button id="copy-button" onclick="copySnippet()">copy to clipboard</button><br>
+	<div id="copy-confirm">copied!</div>
+</body>
+</html>
