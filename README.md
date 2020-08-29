@@ -1,4 +1,5 @@
 Snippy: a featured snippet code generator
+https://juviler.github.io/snippy/
 
 To use:
 1. Choose "paragraph" or "ordered list"
