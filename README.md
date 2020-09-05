@@ -1,11 +1,17 @@
-Snippy: a featured snippet code generator
+Snippy: a code generator for the HubSpot Blog
 
 https://juviler.github.io/snippy/
 
 To use:
-1. Choose "paragraph" or "ordered list"
-2. Write your snippet header in the "header" box.
-3. Enter your snippet in the "content" box. For an ordered list, put each list item on a new line.
-4. Click "generate code".
+
+1. Choose your code type.
+
+2. If creating a featured snippet, write your snippet header in the first box.
+
+3. Enter your snippet/code in the second box. For an ordered list snippet, put each list item on a new line.
+
+4. Click "generate".
+
 5. Click "copy to clipboard".
-6. Paste the code in the CMS Hub source code of your post.
+
+6. For featured snippet code, paste the code in the CMS Hub source code of your post. For a code block, paste the code directly into the body of your post.

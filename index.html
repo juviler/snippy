@@ -2,28 +2,47 @@
 
 <html lang="en">
 <head>
+	<title>Snippy</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css" /> 
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<h1>Snippy</h1>
-	<h2>featured snippet code generator for the HubSpot Blog</h2>
-	<div id="type-container">
-	    <button id="paragraph-button" onclick="setToParagraph()">
-	    	<input type="radio" id="radio-paragraph" checked>paragraph
-	  	</button>
-	    <button id="ordered-list-button" onclick="setToOrderedList()">
-	    	<input type="radio" id="radio-ordered-list">ordered list
-		</button>
+	<h2>a code generator for the HubSpot Blog</h2>
+	<div id="type-buttons">
+		<div id="snippet-buttons">
+		    <button id="paragraph-button" onclick="buttonSet('paragraph')">
+		    	<input type="radio" id="radio-paragraph" checked>FS paragraph
+		  	</button>
+		    <button id="ordered-list-button" onclick="buttonSet('list')">
+		    	<input type="radio" id="radio-ordered-list">FS ordered list
+			</button>
+		</div>
+		<div id="code-block-buttons">
+			<button id="html-button" onclick="buttonSet('html')">
+		    	<input type="radio" id="radio-html">HTML block
+			</button>
+			<button id="css-button" onclick="buttonSet('css')">
+		    	<input type="radio" id="radio-css">CSS block
+			</button>
+			<button id="js-button" onclick="buttonSet('js')">
+		    	<input type="radio" id="radio-js">JS block
+			</button>
+		</div>
 	</div>
-	<textarea id="input-header" rows="1" placeholder="header"></textarea><br>
-	<textarea id="input-content" rows="8" placeholder="content"></textarea><br>
-	<button id="generate-button" onclick="generateSnippet()">generate code</button><br>
-	<textarea id="output" rows="8" placeholder="code" readonly onclick="this.select()"></textarea><br>
-	<button id="copy-button" onclick="copySnippet()">copy to clipboard</button><br>
+	<div id="input-container">
+		<textarea id="input-header" rows="1" placeholder="FS header"></textarea><br>
+		<textarea id="input-content" rows="8" placeholder="FS content"></textarea><br>
+		<button id="generate-button" onclick="generateCode()">generate</button>
+	</div>
+	<div id="output-container">
+		<textarea id="output" rows="8" placeholder="CMS code" readonly disabled=true onclick="this.select()"></textarea><br>
+		<button id="copy-button" onclick="copySnippet()">copy to clipboard</button><br>
+	</div>
 	<div id="copy-confirm">copied!</div>
+	<div id="footer">Questions/suggestions: Slack @jjuviler</div>
 </body>
 </html>
