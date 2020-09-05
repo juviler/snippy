@@ -94,6 +94,3 @@ function copySnippet() {
 	document.execCommand('copy');
 	$('#copy-confirm').hide().fadeIn(250).delay(500).fadeOut(250);
 }
-
-
-
