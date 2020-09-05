@@ -27,11 +27,12 @@ button {
 	border-color: #FD795A;
 	border-radius: 5px;
 	border-width: 1px;
+	opacity: .95;
     outline: none;
 }
 
 button:hover {
-	opacity: .9;
+	opacity: 1;
 	cursor: pointer;
 }
 
