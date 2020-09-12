@@ -1,4 +1,4 @@
-[Snippy](https://juviler.github.io/snippy/): a code generator for the HubSpot Blog
+[Snippy](https://juviler.github.io/snippy/): a snippet generator for the HubSpot Blog
 
 To use:
 
