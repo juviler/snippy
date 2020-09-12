@@ -2,11 +2,11 @@
 
 To use:
 
-1. Choose your code type.
+1. Choose your snippet type (featured snippet paragraph, feature snippet list, HTML block, CSS block, or JS block).
 
 2. If creating a featured snippet, write your snippet header in the first box.
 
-3. Enter your snippet/code in the second box. For an ordered list snippet, put each list item on a new line.
+3. Enter your snippet content/code in the second box. For ordered list snippets, put each list item on a new line.
 
 4. Click "generate".
 
