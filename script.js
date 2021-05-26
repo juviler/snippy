@@ -6,7 +6,7 @@ function generateCode() {
 
 	// produce FS output
 	if (codeType == 'paragraph' || codeType == 'ordered_list') {
-		var snippet = '{{ sgMacro.render_ftSnippet({ header: "' + $('#input-header').val() + '", content_type: "' + codeType + '", list: { items : [ ' + makeOrderedList(codeType) + ' ] }, paragraph: { content: ' + makeParagraph(codeType) + ' } }) }}';
+		var snippet = '{{ sgMacro.render_ftSnippet({ header: "' + $('#input-heading').val() + '", content_type: "' + codeType + '", list: { items : [ ' + makeOrderedList(codeType) + ' ] }, paragraph: { content: ' + makeParagraph(codeType) + ' } }) }}';
 		$('#output').val(snippet);	
 	}
 
