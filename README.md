@@ -2,7 +2,7 @@
 
 To use:
 
-1. Choose your snippet type (featured snippet paragraph, feature snippet list, HTML block, CSS block, or JS block).
+1. Choose your snippet type (featured snippet paragraph, feature snippet list, HTML snippet, CSS snippet, or JS snippet).
 
 2. If creating a featured snippet, write your snippet header in the first box.
 
