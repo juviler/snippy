@@ -82,7 +82,7 @@ textarea {
 	resize: none;
 }
 
-#input-header, #output { border-radius: 5px 5px 0px 0px; }
+#input-heading, #output { border-radius: 5px 5px 0px 0px; }
 
 #input-content { border-radius: 0px 0px 0px 0px; }
 
