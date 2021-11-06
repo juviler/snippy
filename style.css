@@ -102,11 +102,6 @@ textarea {
 	position: fixed;
 	right: 40px;
 	top: 25px;
-
-	animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
     z-index: 1;
 }
 
@@ -124,12 +119,6 @@ a:link { text-decoration: none; }
 a:visited {
 	text-decoration: none; 
 	color: #33475B;
-}
-  
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
 }
 
 #pointer {
